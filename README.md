@@ -19,6 +19,6 @@ This function requires the following values as configuration:
 <li>Storage container name
 <li>Automation Hook URL
 </ul>
-<li>AseApiAgent. This is a library where the majority of the functionality is implemented. There are 3 main components with corresopnding interfaces so they can be tested: ASE Management API invocation, Blob Storage Persistence and Web Hook.
+<li>AseApiAgent. This is a library where the majority of the functionality is implemented. There are 3 main components with corresponding interfaces so they can be tested: ASE Management API invocation, Blob Storage Persistence and Web Hook invocation.
 <li>AseMgmtTest. Unit Tests
 </ul>
