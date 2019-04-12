@@ -5,7 +5,7 @@ This solution includes 3 projects:
 <li> AseMgMtWatch. Azure Function on a 5 minute timer that invokes the ASE Management API: 
 https://docs.microsoft.com/en-us/azure/app-service/environment/management-addresses#get-your-management-addresses-from-api<br>
 The function will invoke the API and compare the IP list with a list that keeps in blob storage. If the list changed, the new list is saved in blob storage and an Azure Automation Webhook is invoked.  <br>
-The Automation runbook powershell code will then update the ASE Subnet UDR with the new IPs.  The ps1 code is included in the AseMgMtWatch project under the Automation folder.<br>
+The Automation runbook powershell code will then update the ASE Subnet UDR with the new IPs.  The ps1 code is included in the AseMgMtWatch project under the Automation folder. You will need to update the runbook to provide your Route Table and RG name and also the IP of your firewall<br>
 This function requires the following values as configuration:
 <ul>
 <li>Subcription ID
