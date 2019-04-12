@@ -1,4 +1,4 @@
-This project provides a solution to the poroblem of App Service Environment changing Azure Management IPs.  <br>
+This project provides a solution to the problem of App Service Environment changing Azure Management IPs.  <br>
 Management IPs are required when configuring User Defined Routes for Outbound Traffic Inspection. In order to have outbound traffic inspection with a default route sending traffic to a Firewall, the Route Table has to include all ASE Azure Management management IPS with nexthop Internet.
 This solution includes 3 projects:
 <ol>
