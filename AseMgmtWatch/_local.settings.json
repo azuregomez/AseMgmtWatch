@@ -1,0 +1,17 @@
+﻿{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AzureWebJobsDashboard": "UseDevelopmentStorage=true",
+    "subscriptionId": "sub id",
+    "rgname": "ASE RG",
+    "asename": "ASE Name",
+    "tenantId": "AAD Tenant id",
+    "appid": "AAD Registered app id",
+    "appKey": "AAD registered app key",
+    "accountName": "storage account",
+    "storageKey": "storage account key",
+    "containerName": "asemanagement",
+    "automationwebhookurl": "webhook url"
+  }
+}
