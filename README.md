@@ -1,11 +1,11 @@
-This project provides a solution to the poroblem of App Service Environment changing Azure Management IPs.  
+This project provides a solution to the poroblem of App Service Environment changing Azure Management IPs.  <br>
 Management IPs are required when configuring User Defined Routes for Outbound Traffic Inspection. In order to have outbound traffic inspection with a default route sending traffic to a Firewall, the Route Table has to include all ASE Azure Management management IPS with nexthop Internet.
 This solution includes 3 projects:
 <ol>
 <li> AseMgMtWatch. Azure Function on a 5 minute timer that invokes the ASE Management API: 
-https://docs.microsoft.com/en-us/azure/app-service/environment/management-addresses#get-your-management-addresses-from-api
-The function will invoke the API and compare the IP list with a list that keeps in blob storage. If the list changed, the new list is saved in blob storage and an Azure Automation Webhook is invoked.  
-The Automation runbook powershell code will then update the ASE Subnet UDR with the new IPs.  The ps1 code is included in the AseMgMtWatch project under the Automation folder.
+https://docs.microsoft.com/en-us/azure/app-service/environment/management-addresses#get-your-management-addresses-from-api<br>
+The function will invoke the API and compare the IP list with a list that keeps in blob storage. If the list changed, the new list is saved in blob storage and an Azure Automation Webhook is invoked.  <br>
+The Automation runbook powershell code will then update the ASE Subnet UDR with the new IPs.  The ps1 code is included in the AseMgMtWatch project under the Automation folder.<br>
 This function requires the following values as configuration:
 <ul>
 <li>Subcription ID
